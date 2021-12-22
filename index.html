@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SNAKE</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="game.js"></script> 
+  </head>
+  <body onload="initialize()">
+    <h1>Snake</h1>
+    <div id="container"></div>
+    <div id='footer'>
+      <div id='difficulty'>
+        Difficulty: &nbsp;  
+        <span>
+          <button name='difficulty' value="easy">Easy</button>
+          <button name='difficulty' value='normal'>Normal</button>
+          <button name='difficulty' value='hard'>Hard</button>
+        </span>
+      </div>
+      <div id='scoreContainer'>
+        Score:
+        <span id='score'>0</span>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Londrina Outline');
+@import url('https://fonts.googleapis.com/css2?family=Road+Rage&display=swap');
+body {
+  box-sizing: border-box;
+  margin: 0;
+  background-color: rgb(75, 76, 80);
+  font-family: 'Road Rage', cursive;
+}
+h1 { 
+  font-size: 40px;
+  margin: 20px;
+  text-align: center;
+  color: white;
+  text-shadow: 
+    0 0 10px rgb(153, 231, 195),
+    0 0 20px rgb(98, 223, 171),
+    0 0 40px rgb(38, 148, 106),
+    0 0 80px rgb(46, 94, 62);
+}
+#container {
+  box-shadow: 2px 2px 16px 1px black;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(43, 43, 54);
+  margin: 0 auto;
+  padding: 0;
+  display: table;
+  position: relative;
+}
+#footer {
+  box-sizing: border-box;
+  font-size: 25px;
+  width: 400px;
+  height: auto;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  position: relative;
+  color: whitesmoke;
+}
+#scoreContainer {
+  padding-left: 40px;
+  float: right;
+}
+#difficulty {
+  padding: 0;
+  display: flex;
+  width: auto
+}
+#difficulty button {
+  background-color: transparent;
+  border: none;
+  color: whitesmoke;
+  font-size: 25px;
+  font-family: 'Road Rage', cursive;
+  padding: 0 10px;
+}
+#difficulty button:hover {
+  cursor: pointer;
+  color: pink;
+}
+#head,
+.snakeBody {
+  box-shadow: 0 0 5px #fff, 0 0 8px #fff, 
+  0 0 17px #fff, 0 0 23px #0fa,
+    0 0 28px #0fa;
+}
+#head,
+.snakeBody,
+#apple {
+  height: 10px;
+  width: 10px;
+  position: absolute;
+}
+#head {
+  background-color: whitesmoke;
+  border-radius: 50%;
+}
+.snakeBody {
+  background-color: #0fa;
+}
+#apple {
+  background-color: rgb(236, 170, 170);
+  box-shadow: 0 0 7px rgb(241, 210, 210), 0 0 7px rgb(223, 98, 109),
+    0 0 10px rgb(206, 81, 91), 0 0 21px rgb(243, 54, 95);
+  z-index: 100;
+  border-radius: 50%;
+}
+#gameOver {
+  color: whitesmoke;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 37px;
+  display: table-cell;
+}
+#gameOver p {
+  animation: flicker 1s linear infinite;
+}
+#newGame {
+  font-weight: 500;
+  border: 3px solid whitesmoke;
+  padding: 5px 10px;
+  text-align: center;
+  font-size: 28px;
+  color: whitesmoke;
+  background-color: transparent;
+  font-family: 'Road Rage', cursive;
+}
+#newGame:hover {
+  color: #0fa;
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+#pause {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  opacity: 0.5;
+  display: table;
+}
+#pause p {
+  color: whitesmoke;
+  font-size: 30px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+#score{
+  color: #0fa;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
