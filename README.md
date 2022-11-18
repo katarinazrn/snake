@@ -1,4 +1,4 @@
 # snake
-classic snake game (without canvas)
+classic snake game 
 
 https://katarinazrn.github.io/snake/
